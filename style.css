@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+    font-size: 16px;
+    font-family: Serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    color: hsl(30, 10%, 34%);
+
+}
+
+.container{
+    
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 45%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  
+
+}
+
+.flex{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center; 
+    align-items: center; 
+    
+    
+
+}
+.header-section{
+    flex-wrap: wrap;
+   padding-left:5%;
+   padding-top: 20px;
+
+
+   
+}
+.header-section img {
+    object-fit: contain;
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+}
+.header-section h1{
+    padding-right: 40%;
+    
+}
+.header-section p{
+    /* padding-left: 45px; */
+    color: hsl(30, 10%, 34%);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.PrepList{
+    display: flex; /* Use flexbox on each list item */
+   
+    flex-direction: column;
+    
+    background-color: hsl(330, 100%, 98%);
+    font-weight: 100;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+    border-radius: 10px;
+   
+    
+}
+.PrepList p{
+
+    color: hsl(332, 51%, 32%);
+    font-weight: 800;
+    padding-left: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+.PrepList ul {
+    
+    list-style-type: none;
+   
+}
+
+.PrepList ul li {
+    
+    padding-bottom: 10px;
+
+}
+.PrepList ul li span{
+    color: hsl(24, 5%, 18%);
+    font-weight: 900;
+    margin-left: 20px;
+}
+.PrepList ul li::before {
+    content: '●'; /* Custom bullet */
+    font-size: 9px; /* Change bullet size */
+    color: hsl(332, 51%, 32%);
+    margin-right: 10px; 
+  
+ 
+  }
+
+  .Ingredients{
+    display: flex; 
+    flex-direction: column;
+
+    
+}
+
+.Ingredients h2{
+
+    color: hsl(14, 45%, 36%);
+    font-weight: 800;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.Ingredients ul {
+    
+    list-style-type: none;
+    width: 100%;
+    
+
+
+   
+}
+
+.Ingredients ul li {
+    
+    padding-bottom: 10px;
+    padding-right: 20%;
+    
+}
+
+.Ingredients ul li::before {
+    content: '●'; 
+    font-size: 9px; 
+    color: hsl(14, 45%, 36%);
+    margin-right: 10px; 
+
+  }
+
+/* Instructions */
+
+.Instructions{
+    display: flex; /* Use flexbox on each list item */
+    flex-direction: column;
+    
+}
+
+.Instructions h2{
+
+    color: hsl(14, 45%, 36%);
+    font-weight: 800;
+    padding-left: 30px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.Instructions ol {
+    
+    list-style: decimal;
+    padding-left: 45px;
+    
+   
+}
+.Instructions ol li span{
+    color:  hsl(14, 45%, 36%);
+    font-weight: 800;
+}
+
+.Instructions ol li {
+    
+    padding-bottom: 10px;
+    padding-left: 15px;
+   
+    
+}
+
+.Instructions ol li::marker {
+    color:  hsl(14, 45%, 36%);
+ 
+    font-weight: 800;
+   
+  }
+
+
+  hr{
+   
+    width: 90%;
+    border-top: 5px hsl(30, 10%, 34%);
+  
+  }
+  .Nutrition {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  
+  .Nutrition h2 {
+    color: hsl(14, 45%, 36%);
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 10px;
+  
+  }
+  
+  .Nutrition p {
+    color: hsl(30, 10%, 34%);
+    margin-bottom: 10px;
+  }
+  
+.Nutrition table{
+    padding-left: 35px;
+    color: hsl(30, 10%, 34%);
+    width: 95%; 
+    margin-bottom: 30px;
+}
+.Nutrition table td {
+    padding: 10px; 
+    border-bottom: 1px solid #ccc;
+  }
+
+  .Nutrition .tdbordervalue{
+    color: hsl(14, 45%, 36%);
+    font-weight: 800;
+  }
+
+
+  .Nutrition table tr:last-child td {
+    border-bottom: none; 
+  }
+  @media only screen and (max-width: 980px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .header-section {
+        padding:0; 
+        
+    }
+    .header-section img {
+        width: 100%;
+        object-fit: contain;
+    }
+    .header-section h1 {
+    
+        font-size: 40px;
+        width: 100%;
+      
+    }
+
+    .header-section h1, .header-section p {
+        padding-left: 20px;
+        text-align: left;
+    }
+    .PrepList ul {
+        padding-left: 45px;
+        padding-right: 0;
+        font-size: 10px;
+    }
+
+
+    .PrepList p {
+        font-size: 18px;
+    }
+
+    .Instructions ol {
+        padding-left: 60px;
+        padding-right: 10px;
+    }
+    .Nutrition table {
+        width: 100%;
+    }
+}
+
+/* Responsive: Small screens (Mobile) */
+@media only screen and (max-width: 480px) {
+
+    .container {
+      
+        margin: 0 auto; /* Equal margin on left and right with auto centering */
+    }
+
+    .header-section h1, .header-section p {
+        padding-left: 20px;
+        text-align: left;
+    }
+    .header-section {
+        padding:0; 
+        width: 100%;
+    }
+  
+    .header-section h1 {
+    
+        font-size: 30px;
+    }
+    .PrepList p {
+        font-size: 16px;
+    }
+
+    .PrepList ul {
+        padding-left: 45px;
+        padding-right: 0;
+        font-size: 10px;
+    }
+
+    .Ingredients h2, .Instructions h2, .Nutrition h2 {
+        font-size: 20px;
+    }
+
+    .Instructions ol {
+        padding-left: 60px;
+        padding-right: 10px;
+    }
+
+    .Nutrition table {
+        padding: 0;
+        font-size: 14px;
+    }
+}
